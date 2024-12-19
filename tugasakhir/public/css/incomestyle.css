@@ -1,0 +1,358 @@
+/* Global Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, #6DBF9C, #E5F3F1);
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #fffffe;
+    width: 250px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    outline: 3px solid black;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-initial {
+    width: 80px;
+    height: 80px;
+    background-color: #078080;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin: 0 auto 10px auto;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #6DBF9C;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.nav-link:hover {
+    background: #4D9F7A;
+    color: white;
+}
+
+.logout-btn {
+    background-color: #E06D6D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #C15555;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+    background: #fffffe;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    outline: 3px solid black;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.card {
+    background: #ABD1C6;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    width: 95%;
+    transition: transform 0.3s ease, background 0.3s ease;
+    outline: 3px solid black;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Wrapper for Form and Filter */
+.filter-form-wrapper {
+    display: flex; /* Flexbox untuk membuat elemen sejajar horizontal */
+    align-items: flex-start; /* Atur agar sejajar di bagian atas */
+    gap: 20px; /* Jarak antar elemen */
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+/* Filter Container */
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: #ABD1C6;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 45%;
+}
+
+/* Align dropdowns to the top */
+.filter-dropdowns-row {
+    display: flex; /* Atur elemen menjadi sejajar horizontal */
+    flex-direction: row; /* Pastikan baris */
+    gap: 60px; /* Jarak antar dropdown */
+    justify-content: flex-start; /* Posisi ke kiri */
+    align-items: center; /* Pastikan rata vertikal */
+    
+}
+
+.month-dropdown, .year-dropdown {
+    padding: 10px;
+    border: 2px solid #ABD1C6;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #E5F3F1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Set to 100% of their container for better responsiveness */
+    max-width: 200px; /* Optional: Limit the max width */
+    margin: 0 auto; /* Center-align if wrapping occurs */
+}
+
+select {
+    height: 42px;
+    line-height: normal;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: #ABD1C6;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    outline: 3px solid black;
+    display: flex;
+    align-items: center;
+}
+
+/* income Form */
+.income-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: #ABD1C6;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 55%;
+}
+
+.income-form h2 {
+    text-align: center;
+}
+
+.income-form .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.income-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.income-form input {
+    height: 42px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.income-form button {
+    height: 42px;
+    padding: 5px 10px;
+    background-color: #2cb67d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.income-form button:hover {
+    background-color: #4D9F7A;
+}
+
+/* Tombol History */
+.history-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6DBF9C;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 3px solid black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.history-btn:hover {
+    background-color: #4D9F7A;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.history-btn:active {
+    transform: scale(0.95);
+    background-color: #899ac8;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 10px; /* Space between buttons */
+        width: 50%; /* Make grid span the width of the sidebar */
+    }
+    
+    .nav-link{
+        display: flex;
+        justify-content: center; /* Center text in the button */
+        align-items: center;
+        padding: 10px 10px;
+        background: #6DBF9C;
+        border-radius: 15px;
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        transition: background 0.3s ease, transform 0.2s;
+    }
+
+    .logout-btn {
+        display: flex;
+        justify-content: center; /* Center text in the button */
+        align-items: center;
+        padding: 10px 10px;
+        background: #E06D6D;
+        border-radius: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        transition: background 0.3s ease, transform 0.2s;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .history-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .filter-container {
+        width: 100%; /* Expand filter container to take full width */
+    }
+
+    .filter-dropdowns-row {
+        flex-wrap: wrap; /* Allow dropdowns to wrap */
+        gap: 10px; /* Adjust the gap for smaller screens */
+        justify-content: center; /* Center-align dropdowns */
+    }
+
+    .month-dropdown, .year-dropdown {
+        flex: none; /* Disable flexible sizing on smaller screens */   
+        margin: 0 auto; /* Center-align dropdowns */
+    }
+}

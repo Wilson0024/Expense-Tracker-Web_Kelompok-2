@@ -1,0 +1,116 @@
+/* Mengatur font dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    padding: 50px;
+    background: radial-gradient(circle, #6DBF9C, #E5F3F1);
+    color: black;
+}
+
+#back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6DBF9C; /* Warna tombol */
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 3px solid black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px; /* Beri jarak atas */
+    margin-left: 10px; /* Beri jarak kiri */
+    position: relative; /* Posisi sesuai elemen sekitarnya */
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#back-button:hover {
+    background-color: #4D9F7A;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#back-button:active {
+    transform: scale(0.95);
+    background-color: #899ac8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul halaman */
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    color: black;
+    background-color: #fffffe;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid black; /* Outline hitam */
+    display: block;
+}
+
+/* Wrapper untuk judul dan tabel */
+.wrapper {
+    width: 80%;
+    margin: 30px auto;
+    border: 3px solid black; /* Border untuk mengelilingi judul dan tabel */
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #6DBF9C;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Pengaturan tabel */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #F9F5F6;
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid black; /* Outline tegas pada tabel */
+    border: 2px solid #000; /* Menambahkan border tebal pada tabel */
+}
+
+/* Header tabel */
+th {
+    background-color: #6DBF9C;
+    color: black;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border: 2px solid black; /* Outline pada header */
+}
+
+/* Sel tabel */
+td {
+    padding: 8px 12px;
+    text-align: left;
+    border: 2px solid black; /* Garis border pada setiap sel */
+}
+
+/* Baris tabel saat hover */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Teks jika tidak ada data */
+td[colspan="5"] {
+    text-align: center;
+    color: #e74c3c;
+    font-style: italic;
+}
+
+td button {
+    border: none;
+    background: none;
+    color: red;
+}
+
