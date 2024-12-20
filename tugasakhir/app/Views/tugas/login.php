@@ -64,10 +64,6 @@
             alert("Username must be at least 3 characters long.");
             event.preventDefault(); // Prevent form submission
             return false;
-        } else if (!usernameRegex.test(username)) {
-            alert("Username can only contain alphabetic characters.");
-            event.preventDefault(); // Prevent form submission
-            return false;
         }
 
         // Check if password is at least 7 characters
